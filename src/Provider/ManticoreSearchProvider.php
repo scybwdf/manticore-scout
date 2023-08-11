@@ -2,7 +2,7 @@
 
 namespace Scybwdf\ManticoreScout\Provider;
 
-use Scybwdf\ManticoreScout\ManticoreSearchEngine;
+use Scybwdf\ManticoreScout\Engine\ManticoreSearchEngine;
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\ContainerInterface;
 use Hyperf\Scout\Engine\Engine;
