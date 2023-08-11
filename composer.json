@@ -1,6 +1,7 @@
 {
   "name": "scybwdf/manticore-scout",
   "type": "library",
+  "version": "2.0",
   "description": "ManticoreSearch integration for Laravel Scout、Hyperf Scout",
   "license": "MIT",
   "authors": [
