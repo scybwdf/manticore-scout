@@ -13,10 +13,10 @@
 
 ### 第三步
 
-```php bin/hyperf.php vendor:publish scybwdf/manticore-scout``` （将会覆盖scout.php配置文件）
+```php bin/hyperf.php vendor:publish hyperf/scout```
 
 
-或者手动添加配置文件配置示例如下
+或者手动添加配置文件scout.php配置示例如下
 ```
 return [
 'default' => env('SCOUT_ENGINE', 'manticoresearch'),

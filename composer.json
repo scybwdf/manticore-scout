@@ -24,7 +24,7 @@
   },
   "extra": {
     "hyperf": {
-      "config": "Scybwdf\\manticore-scout\\ConfigProvider"
+      "config": "Scybwdf\\ManticoreScout\\ConfigProvider"
     }
   }
 }
