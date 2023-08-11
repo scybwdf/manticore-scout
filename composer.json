@@ -18,5 +18,13 @@
     "hyperf/database": "^2.2",
     "hyperf/scout": "^2.2",
     "manticoresoftware/manticoresearch-php": "3.0.1"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "hyperf": {
+      "config": "Scybwdf\\manticore-scout\\ConfigProvider"
+    }
   }
 }
