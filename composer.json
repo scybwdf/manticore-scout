@@ -1,7 +1,7 @@
 {
   "name": "scybwdf/manticore-scout",
   "type": "library",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "ManticoreSearch integration for Laravel Scout、Hyperf Scout",
   "license": "MIT",
   "authors": [
@@ -18,7 +18,7 @@
   "require": {
     "hyperf/database": "^3.0",
     "hyperf/scout": "^3.0",
-    "manticoresoftware/manticoresearch-php": "3.0.1"
+    "manticoresoftware/manticoresearch-php": "^3.0"
   },
   "config": {
     "sort-packages": true

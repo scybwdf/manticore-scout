@@ -228,16 +228,19 @@ class ManticoreSearchEngine extends Engine
         return $this->config['setting']??$defaultConfig;
     }
 
+
     protected function getModelIndexFields($model)
     {
         $fields = [];
-
-        $tableColumns = $model->getConnection()->getDoctrineSchemaManager()->listTableColumns($model->getConnection()->getTablePrefix().$model->getTable());
-
-        foreach ($tableColumns as $column) {
-            $fieldType = $this->mapDatabaseFieldType($column->getType()->getName());
-            if($column->getName()!='id'){
-                $fields[$column->getName()] = ['type' => $fieldType];
+        if($model->getFields()){
+            $fields=$model->getFields();
+        }else{
+            $tableColumns = $model->getConnection()->getDoctrineSchemaManager()->listTableColumns($model->getConnection()->getTablePrefix().$model->getTable());
+            foreach ($tableColumns as $column) {
+                $fieldType = $this->mapDatabaseFieldType($column->getType()->getName());
+                if($column->getName()!='id'){
+                    $fields[$column->getName()] = ['type' => $fieldType];
+                }
             }
         }
 
